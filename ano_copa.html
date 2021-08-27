@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+	function mostra(frase) {
+
+		document.write(frase);
+		puloLinha();
+
+	}
+
+	function puloLinha() {
+
+		document.write ("<br><br><br>");
+
+	}
+
+	var limite = parseInt(prompt("Insira a data limite"))
+	var anoCopa = 1930;
+
+	while(anoCopa <= limite) {
+
+	mostra("No ano de " + anoCopa + " teve copa do mundo.");
+	anoCopa = anoCopa + 4;
+	}
+
+	alert("Essas foram todas as copas até agora :)");
+</script>
